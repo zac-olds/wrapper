@@ -9,14 +9,17 @@ import { Switch, Route } from "react-router-dom";
 // COMPONENTS
 import './App.css';
 import Nav from "./components/Nav";
+import NewReview from "./components/NewReview"
 import CigarList from "./components/CigarList";
 import Home from "./components/Home"
+import CigarDetail from "./components/CigarDetail";
+
 
 
 function App() {
 
   const [cigarData, setCigarData] = useState([])
-  console.log(cigarData);
+  // console.log(cigarData);
 
   useEffect(() => {
     const getCigars = async () => {
@@ -36,15 +39,21 @@ function App() {
       </div>
       <Switch>
       {/* NEW REVIEW */}
-
+        <Route path="/new-review">
+          <NewReview/>
+        </Route>
       {/* CIGAR REVIEW DETAIL */}
-
+        <Route path="/cigars/:id">
+          <CigarDetail/>
+        </Route>
       {/* CIGAR LIST */}
-        <Route path="/cigars">
-          <CigarList cigarData={cigarData} />
+        <Route path="/cigar/list">
+          {cigarData.map((cigar) => (
+            <CigarList cigar={cigar} key={cigar.id} />
+          ))}
         </Route>
       {/* HOME */}
-        <Route path="/">
+        <Route exact path="/">
           <Home/>
         </Route>  
       </Switch>

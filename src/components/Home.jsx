@@ -13,10 +13,12 @@ const Home = (props) => {
         <p> ―Michael Jordan</p>
       </div>
       <div>
-        <Link to="/cigars">
+        <Link to="/cigar/list">
           <button> Cigar List </button>
         </Link>
-        <button> New Review </button>
+        <Link to="/new-review">
+          <button> New Review </button>
+        </Link>
       </div>
     </div>
   );

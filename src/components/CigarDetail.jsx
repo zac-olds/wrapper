@@ -12,7 +12,7 @@ class CigarDetail extends Component {
   async getDetail() {}
 
   render() {
-    return <div></div>;
+    return <div>Detail</div>;
   }
 }
 
