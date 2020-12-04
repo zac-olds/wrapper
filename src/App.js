@@ -10,6 +10,7 @@ import { Switch, Route } from "react-router-dom";
 import './App.css';
 import Nav from "./components/Nav";
 import CigarList from "./components/CigarList";
+import Home from "./components/Home"
 
 
 function App() {
@@ -39,10 +40,12 @@ function App() {
       {/* CIGAR REVIEW DETAIL */}
 
       {/* CIGAR LIST */}
-
+        <Route path="/cigars">
+          <CigarList cigarData={cigarData} />
+        </Route>
       {/* HOME */}
         <Route path="/">
-          <CigarList cigarData={cigarData} />
+          <Home/>
         </Route>  
       </Switch>
       {/* FOOTER */}

@@ -16,7 +16,7 @@ class Nav extends Component {
               name="cigar-search"
               type="text"
               id="cigar-search-bar"
-              placeHolder="Search wrapper"
+              placeholder="Search wrapper"
             />
             <button type="submit">Search</button>
           </form>
