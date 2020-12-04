@@ -6,15 +6,15 @@ wrapper
 
 ## Project Description
 
-wrapper is an airtable and React base app that will allow users to discuss, learn about, and discover new cigars. Cigar culture is historically a bit snobby, so this app will endeavor to make cigars more accesible to the beginner, while also providing a useful service to the purists. It will allow users post reviews of cigars, add tasting notes, revisit past reviews (and update them), search for specific reviews based on cigar name or by users that are in the database.
+wrapper is an airtable and React base app that will allow users to discuss, learn about, and discover new cigars. Cigar culture is historically a bit snobby, so this app will endeavor to make cigars more accesible to the beginner, while also providing a useful service to the purists. It will allow users to post reviews of cigars, add tasting notes, revisit past reviews (and update them), and search the database for specific reviews based on cigar name or by author.
 
 ## Wireframes
 
-The [Wireframe](https://user-images.githubusercontent.com/74211758/101119369-cde84680-35b0-11eb-968a-daf3d49e3857.jpg) here
+View the wireframe [here](https://user-images.githubusercontent.com/74211758/101119369-cde84680-35b0-11eb-968a-daf3d49e3857.jpg).
 
 ## Component Hierarchy
 
-[Here](https://user-images.githubusercontent.com/74211758/101112686-814a3e80-35a3-11eb-96ac-b012aa8dd7a5.jpg) is the component hierarchy.
+View the component hierarchy [Here](https://user-images.githubusercontent.com/74211758/101112686-814a3e80-35a3-11eb-96ac-b012aa8dd7a5.jpg).
 
 ## API and Data Sample
 
@@ -68,7 +68,8 @@ The [Wireframe](https://user-images.githubusercontent.com/74211758/101119369-cde
 #### PostMVP
 
 - Add second API
-- Use local storage to save user favorites
+- Add a "buy now" button
+- Add CigarList page based on the author who submitted the review
 
 ## Project Schedule
 
@@ -110,7 +111,7 @@ I know how to set up and make the majority of the app functional and appealing t
 
 ### Weaknesses:
 
-I am not 100% clear how I am going to make my search and top cigar (based on rating) functionality work. In addition, class components are still pretty fresh, and it is going to be difficult to impliment them in the project per the requirements. Lastly, I am still not completely confident with CSS, so making the project look how it does in my mind is going to be and adventure to Mt. Doom.
+I am not 100% clear how I am going to make my search and top cigar (based on rating) functionality work. In addition, class components are still pretty fresh, and it is going to be difficult to impliment them in the project per the requirements. Lastly, I am still not completely confident with CSS, so making the project look how it does in my mind is going to be an adventure to Mt. Doom.
 
 ### Opportunities:
 
