@@ -1,3 +1,19 @@
 .App {
   text-align: center;
 }
+
+/* -------------------------
+NAV STYLING
+------------------------- */
+#header-link:link {
+  text-decoration: none;
+  color: black;
+}
+
+#header-link:visited {
+  color: black;
+}
+
+#header-link:active {
+  color: #5e4a34;
+}

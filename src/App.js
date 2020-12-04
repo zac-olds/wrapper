@@ -1,23 +1,56 @@
-import logo from './logo.svg';
+// API CALL
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { baseURL, config } from "./services";
+
+// PAGE NAVIGATION
+import { Switch, Route } from "react-router-dom";
+
+// COMPONENTS
 import './App.css';
+import Nav from "./components/Nav";
+import CigarList from "./components/CigarList";
+
 
 function App() {
+
+  const [cigarData, setCigarData] = useState([])
+  console.log(cigarData);
+
+  useEffect(() => {
+    const getCigars = async () => {
+      const resp = await axios.get(baseURL, config);
+      setCigarData(resp.data.records);
+    }
+    getCigars();
+  },[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* HEADER */}
+      <div>
+        <header>
+          <Nav/>
+        </header>
+      </div>
+      <Switch>
+      {/* NEW REVIEW */}
+
+      {/* CIGAR REVIEW DETAIL */}
+
+      {/* CIGAR LIST */}
+
+      {/* HOME */}
+        <Route path="/">
+          <CigarList cigarData={cigarData} />
+        </Route>  
+      </Switch>
+      {/* FOOTER */}
+      <div>
+        <footer>
+        </footer>
+      </div>
+      
     </div>
   );
 }
