@@ -10,11 +10,11 @@ wrapper is an airtable and React base app that will allow users to review and re
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+The [Wireframe](https://user-images.githubusercontent.com/74211758/101119369-cde84680-35b0-11eb-968a-daf3d49e3857.jpg) here
 
 ## Component Hierarchy
 
-[Here](https://user-images.githubusercontent.com/74211758/101112383-c3bf4b80-35a2-11eb-8cf6-16b6625f07c0.jpg "wrapped component heirarchy") is the component hierarchy. wireframe.
+[Here](https://user-images.githubusercontent.com/74211758/101112686-814a3e80-35a3-11eb-96ac-b012aa8dd7a5.jpg) is the component hierarchy.
 
 ## API and Data Sample
 
@@ -56,10 +56,6 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | July 17    | Presentations                                      | Incomplete |
 
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component        | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------- | :------: | :------------: | :-----------: | :---------: |
