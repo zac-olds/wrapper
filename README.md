@@ -14,7 +14,7 @@ View the wireframe [here](https://user-images.githubusercontent.com/74211758/101
 
 ## Component Hierarchy
 
-View the component hierarchy [Here](https://user-images.githubusercontent.com/74211758/101112686-814a3e80-35a3-11eb-96ac-b012aa8dd7a5.jpg).
+View the component hierarchy [here](https://user-images.githubusercontent.com/74211758/101182099-467fef00-3613-11eb-8ec7-b7aaaf9b95d9.jpg).
 
 ## API and Data Sample
 
