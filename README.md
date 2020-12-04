@@ -87,7 +87,7 @@ View the component hierarchy [here](https://user-images.githubusercontent.com/74
 
 | Component                          | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Creating airtable DB               |    H     |      3hrs      |    0.5hrs     |    0hrs     |
+| Creating airtable DB               |    H     |      3hrs      |     1hrs      |    0hrs     |
 | React Router and app structure     |    H     |      3hrs      |     0hrs      |    0hrs     |
 | Build out home page with routing   |    H     |      2hrs      |     0hrs      |    0hrs     |
 | Build NavBar                       |    H     |      2hrs      |     0hrs      |    0hrs     |
