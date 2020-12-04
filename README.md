@@ -6,7 +6,7 @@ wrapper
 
 ## Project Description
 
-wrapper is an airtable and React base app that will allow users to review and revisit cigars that they and their friends have reviewed using the application. It will allow users to view past reviews, add new reviews, search for specific reviews based on cigar name or from other users that are in the database.
+wrapper is an airtable and React base app that will allow users to discuss, learn about, and discover new cigars. Cigar culture is historically a bit snobby, so this app will endeavor to make cigars more accesible to the beginner, while also providing a useful service to the purists. It will allow users post reviews of cigars, add tasting notes, revisit past reviews (and update them), search for specific reviews based on cigar name or by users that are in the database.
 
 ## Wireframes
 
@@ -18,57 +18,104 @@ The [Wireframe](https://user-images.githubusercontent.com/74211758/101119369-cde
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+```javascript
+{
+    "records": [
+        {
+            "id": "recwgzXfI0ZhWWOkQ",
+            "fields": {
+                "rating": "96",
+                "filler": "Nicaragua",
+                "cigar": "Aging Room Quattro Nicaragua Maestro",
+                "wrapper": "Nicaragua",
+                "author": "Zac Olds",
+                "binder": "Nicaragua",
+                "photo": "https://img.mshanken.com/d/cao/ratings_extras/cigars/21073-H.jpg",
+                "tastingNotes": "dark chocolate, wood, hints of fine caramel, toasted almonds",
+                "review": "The cigar is essentially Nodal’s vision, crafted by Fernandez with his distinct tobacco and signature factory style. Every last leaf in this blend is ..."
+            },
+            "createdTime": "2020-12-03T22:03:51.000Z"
+        },
+        {
+            "id": "recXahM50tdLu81D8",
+            "fields": {},
+            "createdTime": "2020-12-03T22:03:51.000Z"
+        },
+        {
+            "id": "recTxWdSoSz9G7S8h",
+            "fields": {},
+            "createdTime": "2020-12-03T22:03:51.000Z"
+        }
+    ],
+    "offset": "recTxWdSoSz9G7S8h"
+}
+```
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP. Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.
-
 #### MVP
 
-_These are examples only. Replace with your own MVP features._
-
-- Find and use external api
-- Render data on page
-- Allow user to choose favorites
+- Set up and import airtable database
+- Impliment React Router and app structure
+- Build out home page with TopRatedCigars
+- Build out NavBar and Footer
+- Build out CigarList
+- Build out CigarReview with ability to post/put new/old reviews
+- Build out CigarDetail with capability to delete reviews
+- Build out CigarSearch
+- Style with CSS
 
 #### PostMVP
-
-_These are examples only. Replace with your own Post-MVP features._
 
 - Add second API
 - Use local storage to save user favorites
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
-| Day        | Deliverable                                        | Status     |
-| ---------- | -------------------------------------------------- | ---------- |
-| July 10-12 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| July 13    | Project Approval                                   | Incomplete |
-| July 13    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| July 14    | Pseudocode / actual code                           | Incomplete |
-| July 15    | Initial Clickable Model                            | Incomplete |
-| July 16    | MVP                                                | Incomplete |
-| July 17    | Presentations                                      | Incomplete |
+| Day         | Deliverable                                        | Status     |
+| ----------- | -------------------------------------------------- | ---------- |
+| December 4  | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
+| December 4  | Project Approval                                   | Incomplete |
+| December 6  | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
+| December 6  | Pseudocode / actual code                           | Incomplete |
+| December 8  | Initial Clickable Model                            | Incomplete |
+| December 10 | MVP                                                | Incomplete |
+| December 11 | Presentations                                      | Incomplete |
 
 ## Timeframes
 
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |     5hrs      |    5hrs     |
+| Component                          | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Creating airtable DB               |    H     |      3hrs      |    0.5hrs     |    0hrs     |
+| React Router and app structure     |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Build out home page with routing   |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Build NavBar                       |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Build Footer                       |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Build CigarList page               |    H     |      4hrs      |     0hrs      |    0hrs     |
+| Build CigarReview page             |    H     |     2.5hrs     |     0hrs      |    0hrs     |
+| Set up post review functionality   |    H     |     2.5hrs     |     0hrs      |    0hrs     |
+| Build CigarDetail page             |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Set up delete review functionality |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Research best way to search DB     |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Build CigarSearch, add to Home     |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Build TopRatedCigars, add to Home  |    H     |      4hrs      |     0hrs      |    0hrs     |
+| CSS styling                        |    H     |      6hrs      |     0hrs      |    0hrs     |
+| Total                              |    H     |     40hrs      |    0.5hrs     |    0hrs     |
 
 ## SWOT Analysis
 
 ### Strengths:
 
+I know how to set up and make the majority of the app functional and appealing to users. I have a pretty good idea of what I want it to look like and the logic behind the functionality that I want to impliment for this project. I'm pretty strong on the logic side of React.
+
 ### Weaknesses:
+
+I am not 100% clear how I am going to make my search and top cigar (based on rating) functionality work. In addition, class components are still pretty fresh, and it is going to be difficult to impliment them in the project per the requirements. Lastly, I am still not completely confident with CSS, so making the project look how it does in my mind is going to be and adventure to Mt. Doom.
 
 ### Opportunities:
 
+This project will allow me to practice all the the React syntax and logic that I have learned in the last two weeks, and give me a concrete example of how far I have come. It will also give me the opportunity to learn some new things that I haven't learned yet.
+
 ### Threats:
+
+I get hung up with a lot of the React errors and get frustrated, causing me to lose confidence in myself and what I know is the correct way to impliment something. I know I am going to encounter these errors, so I am going to have to keep this in mind and ask for help if I really fall down into the pit of dispair.
