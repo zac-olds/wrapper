@@ -9,10 +9,10 @@ import { Switch, Route } from "react-router-dom";
 // COMPONENTS
 import './App.css';
 import Nav from "./components/Nav";
-import NewReview from "./components/NewReview"
-import CigarList from "./components/CigarList";
-import Home from "./components/Home"
+import NewReview from "./components/NewReview";
+import Home from "./components/Home";
 import CigarDetail from "./components/CigarDetail";
+import CigarMap from "./components/CigarMap";
 
 
 
@@ -49,9 +49,7 @@ function App() {
         </Route>
       {/* CIGAR LIST */}
         <Route path="/cigar/list">
-          {cigarData.map((cigar) => (
-            <CigarList cigar={cigar} key={cigar.id} />
-          ))}
+          <CigarMap cigarData={cigarData}/>
         </Route>
       {/* HOME */}
         <Route exact path="/">
