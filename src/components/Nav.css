@@ -7,7 +7,11 @@ NAV STYLING
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-left: 100px;
 }
 
 #header-link:link {

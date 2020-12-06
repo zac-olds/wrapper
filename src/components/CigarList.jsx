@@ -10,7 +10,12 @@ const CigarList = (props) => {
       </Link>
     );
   } else {
-    <div>Loading...</div>;
+    return (
+      <div>
+        <h4>Cigar List</h4>
+        <div>Loading...</div>
+      </div>
+    );
   }
 };
 

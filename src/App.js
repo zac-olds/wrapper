@@ -19,6 +19,7 @@ import CigarDetail from "./components/CigarDetail";
 function App() {
 
   const [cigarData, setCigarData] = useState([])
+  const [toggle, setToggle] = useState(true)
   // console.log(cigarData);
 
   useEffect(() => {
@@ -27,7 +28,7 @@ function App() {
       setCigarData(resp.data.records);
     }
     getCigars();
-  },[])
+  }, [toggle])
 
   return (
     <div className="App">
@@ -44,7 +45,7 @@ function App() {
         </Route>
       {/* CIGAR REVIEW DETAIL */}
         <Route path="/cigars/:id">
-          <CigarDetail/>
+          <CigarDetail refresh={setToggle}/>
         </Route>
       {/* CIGAR LIST */}
         <Route path="/cigar/list">
