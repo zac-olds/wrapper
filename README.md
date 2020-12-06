@@ -67,6 +67,7 @@ View the component hierarchy [here](https://user-images.githubusercontent.com/74
 
 #### PostMVP
 
+- Replace cigar list, new review, and search buttons with drop down hamburger menu
 - Add second API
 - Add a "buy now" button
 - Add CigarList page based on the author who submitted the review
