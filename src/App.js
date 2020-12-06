@@ -41,7 +41,7 @@ function App() {
       <Switch>
       {/* NEW REVIEW */}
         <Route path="/new-review">
-          <NewReview/>
+          <NewReview refresh={setToggle}/>
         </Route>
       {/* CIGAR REVIEW DETAIL */}
         <Route path="/cigars/:id">

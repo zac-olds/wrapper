@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
 import axios from "axios";
 
-function NewReview() {
+function NewReview(props) {
   const [author, setAuthor] = useState("");
   const [cigar, setCigar] = useState("");
   const [rating, setRating] = useState("");
@@ -15,6 +15,7 @@ function NewReview() {
   const [review, setReview] = useState("");
 
   const params = useParams();
+  const history = useHistory();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,6 +31,8 @@ function NewReview() {
     };
 
     await axios.post(baseURL, { fields }, config);
+    props.refresh((prev) => !prev);
+    history.push("/cigar/list");
   };
 
   return (
