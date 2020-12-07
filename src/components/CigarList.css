@@ -2,10 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #95b8a9bc;
+  border-radius: 15px;
+  margin: 40px;
+  width: 600px;
 }
 
 .cigars-list {
   text-align: left;
+  margin-bottom: 40px;
 }
 
 .cigar-link:link {

@@ -17,7 +17,7 @@ const Home = (props) => {
       <div>
         <TopThree cigarData={props.cigarData} />
       </div>
-      <div>
+      <div className="button-container">
         <Link to="/cigar/list">
           <button> Cigar List </button>
         </Link>
