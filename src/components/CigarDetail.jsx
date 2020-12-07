@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
 import { withRouter } from "react-router";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./CigarDetail.css";
 
 class CigarDetail extends Component {
@@ -67,11 +67,11 @@ class CigarDetail extends Component {
               <p id="filler">{this.state.cigar.filler}</p>
             </div>
             <div className="tasting-notes">
-              <h3>Tasting Notes: </h3>
+              <h4>Tasting Notes: </h4>
               <p id="tasting-notes">{this.state.cigar.tastingNotes} </p>
             </div>
             <div className="review">
-              <h3>Review: </h3>
+              <h4>Review: </h4>
               <p id="review">{this.state.cigar.review} </p>
             </div>
           </div>

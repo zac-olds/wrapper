@@ -1,0 +1,23 @@
+/* .top-three-list {
+  list-style-image: url("https://user-images.githubusercontent.com/74211758/101369463-f81a5c80-386d-11eb-8523-5fc2afd269f9.png");
+  list-style-position: inside;
+} */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-container {
+  width: 375px;
+  height: auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.top-three-list {
+  list-style-image: url("https://user-images.githubusercontent.com/74211758/101369935-7c6cdf80-386e-11eb-9863-5703bb719bee.png");
+  list-style-position: inside;
+  margin-bottom: 50px;
+}

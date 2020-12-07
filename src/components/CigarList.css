@@ -1,0 +1,12 @@
+#cigar-link:link {
+  text-decoration: none;
+  color: black;
+}
+
+#cigar-link:visited {
+  color: black;
+}
+
+#cigar-link:active {
+  color: #e87931;
+}
