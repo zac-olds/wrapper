@@ -15,9 +15,3 @@
   text-align: center;
   margin-top: 50px;
 }
-
-.top-three-list {
-  list-style-image: url("https://user-images.githubusercontent.com/74211758/101369935-7c6cdf80-386e-11eb-9863-5703bb719bee.png");
-  list-style-position: inside;
-  margin-bottom: 50px;
-}

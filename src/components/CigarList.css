@@ -8,15 +8,21 @@
   text-align: left;
 }
 
-#cigar-link:link {
+.cigar-link:link {
   text-decoration: none;
-  color: black;
+  color: #fcb334;
 }
 
-#cigar-link:visited {
-  color: black;
+.cigar-link:visited {
+  color: #fcb334;
 }
 
-#cigar-link:active {
+.cigar-link:active {
   color: #e87931;
+}
+
+.cigar-link {
+  list-style-image: url("https://user-images.githubusercontent.com/74211758/101369935-7c6cdf80-386e-11eb-9863-5703bb719bee.png");
+  list-style-position: inside;
+  margin-bottom: 50px;
 }

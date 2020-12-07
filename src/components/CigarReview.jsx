@@ -4,7 +4,7 @@ import { useParams, useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
 import axios from "axios";
 
-function Review(props) {
+function CigarReview(props) {
   // Setting up state for each cigar input
   const [author, setAuthor] = useState("");
   const [cigar, setCigar] = useState("");
@@ -43,7 +43,7 @@ function Review(props) {
       // Sets up the fields to be populated by the inputs and send to airtable when the form is submitted.
       author,
       cigar,
-      rating,
+      rating: Number(rating),
       wrapper,
       binder,
       filler,
@@ -84,7 +84,7 @@ function Review(props) {
       <label htmlFor="rating"></label>
       <input
         name="rating"
-        type="text"
+        type="number"
         value={rating}
         onChange={(e) => setRating(e.target.value)}
       />
@@ -128,4 +128,4 @@ function Review(props) {
   );
 }
 
-export default Review;
+export default CigarReview;

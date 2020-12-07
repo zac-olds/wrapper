@@ -9,7 +9,7 @@ import { Switch, Route } from "react-router-dom";
 // COMPONENTS
 import './App.css';
 import Nav from "./components/Nav";
-import Review from "./components/Review";
+import CigarReview from "./components/CigarReview";
 import Home from "./components/Home";
 import CigarDetail from "./components/CigarDetail";
 import CigarMap from "./components/CigarMap";
@@ -41,11 +41,11 @@ function App() {
       <Switch>
       {/* NEW REVIEW */}
         <Route path="/new-review">
-          <Review refresh={setToggle} cigarData={cigarData}/>
+          <CigarReview refresh={setToggle} cigarData={cigarData}/>
         </Route>
       {/* EDIT REVIEW */}
         <Route path="/edit/:id">
-          <Review refresh={ setToggle} cigarData={cigarData} />
+          <CigarReview refresh={ setToggle} cigarData={cigarData} />
         </Route>
       {/* CIGAR REVIEW DETAIL */}
         <Route path="/cigars/:id">
@@ -57,7 +57,7 @@ function App() {
         </Route>
       {/* HOME */}
         <Route exact path="/">
-          <Home/>
+          <Home cigarData={cigarData} />
         </Route>  
       </Switch>
       {/* FOOTER */}

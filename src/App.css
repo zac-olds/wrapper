@@ -1,3 +1,8 @@
-.App {
+body {
   text-align: center;
+  background-image: url("./images/best/leaves.jpg");
+  background-size: cover;
+  color: #fcb334;
+  text-shadow: 1px 1px black;
+  font-family: "Staatliches", cursive;
 }

@@ -15,7 +15,7 @@ const Home = (props) => {
         <p> ―Michael Jordan</p>
       </div>
       <div>
-        <TopThree />
+        <TopThree cigarData={props.cigarData} />
       </div>
       <div>
         <Link to="/cigar/list">
