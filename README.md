@@ -77,9 +77,9 @@ View the component hierarchy [here](https://user-images.githubusercontent.com/74
 | Day         | Deliverable                                        | Status     |
 | ----------- | -------------------------------------------------- | ---------- |
 | December 4  | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
-| December 4  | Project Approval                                   | Incomplete |
-| December 6  | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| December 6  | Pseudocode / actual code                           | Incomplete |
+| December 4  | Project Approval                                   | Complete   |
+| December 6  | Core Application Structure (HTML, CSS, etc.)       | Complete   |
+| December 6  | Pseudocode / actual code                           | Complete   |
 | December 8  | Initial Clickable Model                            | Incomplete |
 | December 10 | MVP                                                | Incomplete |
 | December 11 | Presentations                                      | Incomplete |
@@ -89,20 +89,20 @@ View the component hierarchy [here](https://user-images.githubusercontent.com/74
 | Component                          | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Creating airtable DB               |    H     |      3hrs      |     1hrs      |    0hrs     |
-| React Router and app structure     |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Build out home page with routing   |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Build NavBar                       |    H     |      2hrs      |     0hrs      |    0hrs     |
+| React Router and app structure     |    H     |      3hrs      |     2hrs      |    0hrs     |
+| Build out home page with routing   |    H     |      2hrs      |     1hrs      |    0hrs     |
+| Build NavBar                       |    H     |      2hrs      |     1hrs      |    0hrs     |
 | Build Footer                       |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Build CigarList page               |    H     |      4hrs      |     0hrs      |    0hrs     |
-| Build CigarReview page             |    H     |     2.5hrs     |     0hrs      |    0hrs     |
-| Set up post review functionality   |    H     |     2.5hrs     |     0hrs      |    0hrs     |
-| Build CigarDetail page             |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Set up delete review functionality |    H     |      1hrs      |     0hrs      |    0hrs     |
+| Build CigarList page               |    H     |      4hrs      |     2hrs      |    0hrs     |
+| Build CigarReview page             |    H     |     2.5hrs     |     2hrs      |    0hrs     |
+| Set up post review functionality   |    H     |     2.5hrs     |     2hrs      |    0hrs     |
+| Build CigarDetail page             |    H     |      3hrs      |     2hrs      |    0hrs     |
+| Set up delete review functionality |    H     |      1hrs      |     1hrs      |    0hrs     |
 | Research best way to search DB     |    H     |      2hrs      |     0hrs      |    0hrs     |
 | Build CigarSearch, add to Home     |    H     |      3hrs      |     0hrs      |    0hrs     |
 | Build TopRatedCigars, add to Home  |    H     |      4hrs      |     0hrs      |    0hrs     |
-| CSS styling                        |    H     |      6hrs      |     0hrs      |    0hrs     |
-| Total                              |    H     |     40hrs      |    0.5hrs     |    0hrs     |
+| CSS styling                        |    H     |      6hrs      |     1hrs      |    0hrs     |
+| Total                              |    H     |     40hrs      |     15hrs     |    0hrs     |
 
 ## SWOT Analysis
 

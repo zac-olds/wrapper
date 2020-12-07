@@ -44,6 +44,9 @@ class CigarDetail extends Component {
             <Link to="/cigar/list">
               <button onClick={this.deleteData}>Delete</button>
             </Link>
+            <Link to={`/edit/${this.state.cigarID}`}>
+              <button>Edit</button>
+            </Link>
             <Link to="/cigar/list">
               <button>Back to List</button>
             </Link>

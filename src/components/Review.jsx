@@ -1,10 +1,11 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
 import axios from "axios";
 
-function NewReview(props) {
+function Review(props) {
+  // Setting up state for each cigar input
   const [author, setAuthor] = useState("");
   const [cigar, setCigar] = useState("");
   const [rating, setRating] = useState("");
@@ -13,13 +14,33 @@ function NewReview(props) {
   const [filler, setFiller] = useState("");
   const [tastingNotes, setTastingNotes] = useState("");
   const [review, setReview] = useState("");
+  const [photo, setPhoto] = useState("");
 
+  // Setting up params and history variables to use for routing and editing reviews.
   const params = useParams();
   const history = useHistory();
 
+  // Setting up autofill of input fields when editing a review.
+  useEffect(() => {
+    if (params.id && props.cigarData.length > 0) {
+      const cigar = props.cigarData.find((cigar) => cigar.id === params.id);
+      setAuthor(cigar.fields.author);
+      setCigar(cigar.fields.cigar);
+      setRating(cigar.fields.rating);
+      setWrapper(cigar.fields.wrapper);
+      setBinder(cigar.fields.binder);
+      setFiller(cigar.fields.filler);
+      setTastingNotes(cigar.fields.tastingNotes);
+      setReview(cigar.fields.review);
+      setPhoto(cigar.fields.photo);
+    }
+  }, [props.cigarData, params.id]); // This will cause useEffect to update whenever cigarData or params change.
+
+  // Handle submit will set up the post and put calls for creating and editing reviews when the form is submitted.
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
+      // Sets up the fields to be populated by the inputs and send to airtable when the form is submitted.
       author,
       cigar,
       rating,
@@ -28,11 +49,20 @@ function NewReview(props) {
       filler,
       tastingNotes,
       review,
+      photo,
     };
 
-    await axios.post(baseURL, { fields }, config);
-    props.refresh((prev) => !prev);
-    history.push("/cigar/list");
+    if (params.id) {
+      // If params.id is defined (truthy), we are on the edit review page, so we want to use axios.put.
+      const cigarURL = `${baseURL}/${params.id}`;
+      await axios.put(cigarURL, { fields }, config);
+      history.push(`/cigars/${params.id}`); // Pushes us back to the cigar detail page.
+    } else {
+      // If params.id is an empty object (falsey) we are on the new review page and want to use axios.post.
+      await axios.post(baseURL, { fields }, config);
+      history.push("/cigar/list"); // Pushes the user back to the list page.
+    }
+    props.refresh((prev) => !prev); // Sets the toggle to refresh API call
   };
 
   return (
@@ -98,4 +128,4 @@ function NewReview(props) {
   );
 }
 
-export default NewReview;
+export default Review;

@@ -3,11 +3,13 @@ import CigarList from "./CigarList";
 
 function CigarMap(props) {
   return (
-    <div>
+    <div className="cigar-list-container">
       <h2>Cigar List</h2>
-      {props.cigarData.map((cigar) => (
-        <CigarList cigar={cigar} key={cigar.id} />
-      ))}
+      <div className="cigars-list">
+        {props.cigarData.map((cigar) => (
+          <CigarList cigar={cigar} key={cigar.id} />
+        ))}
+      </div>
     </div>
   );
 }
