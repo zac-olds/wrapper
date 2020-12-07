@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
 import { withRouter } from "react-router";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./CigarDetail.css";
 
 class CigarDetail extends Component {
@@ -43,6 +43,9 @@ class CigarDetail extends Component {
             />
             <Link to="/cigar/list">
               <button onClick={this.deleteData}>Delete</button>
+            </Link>
+            <Link to="/cigar/list">
+              <button>Back to List</button>
             </Link>
           </div>
           <div className="cigar-detail">
