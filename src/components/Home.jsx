@@ -14,7 +14,7 @@ const Home = (props) => {
         </em>
         <p> ―Michael Jordan</p>
       </div>
-      <div>
+      <div className="top-three-container">
         <TopThree cigarData={props.cigarData} />
       </div>
       <div className="button-container">

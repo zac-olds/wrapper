@@ -1,0 +1,20 @@
+.search-bar form {
+  text-align: right;
+  width: 100vw;
+  background: red;
+  position: relative;
+}
+
+.search-bar input {
+  margin: 20px auto 0px;
+}
+
+.search-bar form div {
+  position: absolute;
+  top: 40px;
+  padding: 0 2.5px;
+  right: 20px;
+  background: white;
+  border: 1px solid black;
+  text-align: left;
+}

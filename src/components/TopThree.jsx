@@ -1,7 +1,7 @@
 import CigarList from "./CigarList";
 
 function TopThree(props) {
-  console.log(props);
+  // console.log(props);
 
   const sortCigars = (arr) => {
     // sort cigarData by rating to find highest rated cigars
@@ -18,7 +18,7 @@ function TopThree(props) {
       .slice(0, 3);
     // pull out the top 3 cigars and put them in a new variable
   };
-  console.log(sortCigars(props.cigarData));
+  // console.log(sortCigars(props.cigarData));
 
   return (
     <div>

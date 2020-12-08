@@ -1,8 +1,25 @@
 body {
   text-align: center;
-  background-image: url("./images/best/leaves.jpg");
+  background-image: url("./assets/best/brown-leaves.jpg");
   background-size: cover;
-  color: #fcb334;
+  /* color: #fcb334; */
+  /* color: #f05e1b; */
+  /* color: goldenrod; */
   text-shadow: 1px 1px black;
-  font-family: "Staatliches", cursive;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family: "Oswald", sans-serif;
+  color: whitesmoke;
+  background-color: #10131156;
+  padding: 2px 15px 2px 15px;
+  margin: 5px;
+  border-radius: 15px;
+  border: 1px solid whitesmoke;
+  text-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
+    0 0 30px #e60073, 0 0 40px #e60073;
 }

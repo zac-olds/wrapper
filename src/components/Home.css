@@ -7,19 +7,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #95b8a9bc;
+  background-color: #10131185;
   border-radius: 15px;
-  margin: 40px;
+  margin: 20px;
   width: 600px;
+  color: #fcb334;
 }
 
 .button-container {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .quote-container {
-  width: 375px;
+  width: 50vw;
   height: auto;
   text-align: center;
   margin-top: 50px;
+}
+
+.top-three-container {
+  width: 50vw;
+  text-align: center;
 }
