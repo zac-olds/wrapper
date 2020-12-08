@@ -5,7 +5,7 @@
   align-items: center;
   background-color: #101311a0;
   border-radius: 15px;
-  margin: 40px;
+  margin: 20px;
   width: 600px;
 }
 
@@ -29,7 +29,8 @@
   align-items: left;
   width: 500px;
   margin: 40px 10px 40px 10px;
-  color: #fcb334;
+  color: whitesmoke;
+  text-shadow: 1px 1px black;
 }
 
 .cigar-detail h2 {
@@ -37,7 +38,7 @@
   font-size: 35px;
   font-weight: 200;
   color: whitesmoke;
-  text-shadow: 0 0 10px #f96666, 3px 3px 20px #e87a47;
+  /* text-shadow: 0 0 10px #f96666, 3px 3px 20px #e87a47; */
   animation: neon 3s ease-in-out infinite alternate;
 }
 
