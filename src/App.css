@@ -21,3 +21,8 @@ button {
   text-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
     0 0 30px #e60073, 0 0 40px #e60073;
 }
+
+button:hover {
+  box-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
+    0 0 30px #e60073, 0 0 40px #e60073;
+}

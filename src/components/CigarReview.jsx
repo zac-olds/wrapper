@@ -66,7 +66,7 @@ function CigarReview(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-container">
       <label htmlFor="author"></label>
       <input
         name="author"

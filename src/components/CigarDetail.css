@@ -18,6 +18,8 @@
 #image {
   height: 300px;
   width: 300px;
+  /* height: 50vw;
+  width: 50vw; */
   object-fit: scale-down;
   border-radius: 15px;
   border: 2px solid black;

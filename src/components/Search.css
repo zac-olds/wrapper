@@ -17,12 +17,13 @@
 
 .search-bar div {
   position: absolute;
-  top: 40px;
+  top: 35px;
   right: 10px;
-  background: #101311a0;
+  left: 5px;
+  /* background: #101311a0; */
   /* border: 1px solid whitesmoke; */
   text-align: left;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .search-result:link {
@@ -32,4 +33,8 @@
 
 .search-result:visited {
   color: whitesmoke;
+}
+
+.search-result:hover {
+  color: yellow;
 }

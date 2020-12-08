@@ -21,15 +21,3 @@ class Nav extends Component {
 }
 
 export default Nav;
-
-{
-  /* <form className="nav-search">
-            <input
-              name="cigar-search"
-              type="text"
-              id="cigar-search-bar"
-              placeholder="Search wrapper"
-            />
-            <button type="submit">Search</button>
-          </form> */
-}
