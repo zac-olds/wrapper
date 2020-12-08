@@ -13,7 +13,7 @@ class Nav extends Component {
           </Link>
         </div>
         <div>
-          <Search />
+          <Search cigarData={this.props.cigarData} />
         </div>
       </div>
     );

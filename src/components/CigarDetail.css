@@ -10,7 +10,6 @@
 }
 
 .image-container {
-  /* background-color: black; */
   width: 300px;
   height: 300px;
   margin: 20px;
@@ -21,7 +20,7 @@
   width: 300px;
   object-fit: scale-down;
   border-radius: 15px;
-  border: 5px #fcb334;
+  border: 2px solid black;
 }
 
 .cigar-detail {
@@ -79,16 +78,4 @@
 
 h4 {
   margin: 5px 0px 5px 0px;
-}
-
-button {
-  font-family: "Oswald", sans-serif;
-  color: whitesmoke;
-  background-color: #10131156;
-  padding: 2px 15px 2px 15px;
-  margin: 5px;
-  border-radius: 15px;
-  border: 1px solid whitesmoke;
-  text-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
-    0 0 30px #e60073, 0 0 40px #e60073;
 }

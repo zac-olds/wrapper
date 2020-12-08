@@ -1,14 +1,17 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Search.css";
 
 function Search(props) {
+  console.log("props: ", props);
   // create state to store search values from input
   const [search, setSearch] = useState("");
 
-  const { source } = props;
+  const { cigarData } = props;
   // if cigarData contains the search input, then it is returned by filter. All
-  const results = source.filter((s) =>
-    s.toLowerCase().includes(search.toLowerCase())
+  const results = cigarData.filter((s) =>
+    s.fields.cigar.toLowerCase().includes(search.toLowerCase())
   );
   return (
     <form className="search-bar">
@@ -17,7 +20,12 @@ function Search(props) {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <div>{search && results.map((result) => <p>{result}</p>)}</div>
+      <div className="results-menu">
+        {search &&
+          results.map((result) => (
+            <Link to={`/cigars/${result.id}`}>{result.fields.cigar}</Link>
+          ))}
+      </div>
     </form>
   );
 }

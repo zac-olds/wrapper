@@ -35,7 +35,7 @@ function App() {
       {/* HEADER */}
       <div>
         <header>
-          <Nav/>
+          <Nav cigarData={cigarData} />
         </header>
       </div>
       <Switch>

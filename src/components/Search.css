@@ -1,7 +1,5 @@
-.search-bar form {
+.search-bar {
   text-align: right;
-  width: 100vw;
-  background: red;
   position: relative;
 }
 
@@ -9,7 +7,7 @@
   margin: 20px auto 0px;
 }
 
-.search-bar form div {
+.search-bar div {
   position: absolute;
   top: 40px;
   padding: 0 2.5px;
