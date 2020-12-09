@@ -35,24 +35,8 @@ class CigarDetail extends Component {
     if (this.state.cigar) {
       return (
         <div className="container">
-          <div className="image-container">
-            <img
-              src={`${this.state.cigar.photo}`}
-              id="image"
-              alt={`${this.state.cigar.cigar}`}
-            />
-            <Link to="/cigar/list">
-              <button onClick={this.deleteData}>Delete</button>
-            </Link>
-            <Link to={`/edit/${this.state.cigarID}`}>
-              <button>Edit</button>
-            </Link>
-            <Link to="/cigar/list">
-              <button>Back to List</button>
-            </Link>
-          </div>
+          <h2>{this.state.cigar.cigar}</h2>
           <div className="cigar-detail">
-            <h2>{this.state.cigar.cigar}</h2>
             <div className="rating">
               <h4>Rating: </h4>
               <p id="rating">{this.state.cigar.rating}</p>
@@ -77,6 +61,24 @@ class CigarDetail extends Component {
               <h4>Review: </h4>
               <p id="review">{this.state.cigar.review} </p>
             </div>
+          </div>
+          <div className="image-container">
+            <img
+              src={`${this.state.cigar.photo}`}
+              id="image"
+              alt={`${this.state.cigar.cigar}`}
+            />
+          </div>
+          <div>
+            <Link to="/cigar/list">
+              <button onClick={this.deleteData}>Delete</button>
+            </Link>
+            <Link to={`/edit/${this.state.cigarID}`}>
+              <button>Edit</button>
+            </Link>
+            <Link to="/cigar/list">
+              <button>Back to List</button>
+            </Link>
           </div>
         </div>
       );

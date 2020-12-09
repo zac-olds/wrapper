@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row-reverse;
   justify-content: center;
   align-items: center;
   background-color: #101311a0;
@@ -10,16 +10,20 @@
 }
 
 .image-container {
-  width: 300px;
-  height: 300px;
+  width: 50vw;
+  height: 50vw;
   margin: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #image {
-  height: 300px;
-  width: 300px;
-  /* height: 50vw;
-  width: 50vw; */
+  /* height: 300px;
+  width: 300px; */
+  height: 50vw;
+  width: 50vw;
   object-fit: scale-down;
   border-radius: 15px;
   border: 2px solid black;
@@ -29,17 +33,18 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 500px;
+  width: 50vw;
   margin: 40px 10px 40px 10px;
   color: whitesmoke;
   text-shadow: 1px 1px black;
 }
 
-.cigar-detail h2 {
+.container h2 {
   font-family: "Dancing Script", cursive;
   font-size: 35px;
   font-weight: 200;
   color: whitesmoke;
+  align-self: center;
   /* text-shadow: 0 0 10px #f96666, 3px 3px 20px #e87a47; */
   animation: neon 0.05s ease-in infinite;
 }
@@ -63,7 +68,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 100px;
 }
 
 .tasting-notes,
@@ -81,4 +85,10 @@
 
 h4 {
   margin: 5px 0px 5px 0px;
+}
+
+@media (max-width: 550px) {
+  .container {
+    flex-flow: column wrap;
+  }
 }
