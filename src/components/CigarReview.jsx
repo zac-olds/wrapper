@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { baseURL, config } from "../services";
 import axios from "axios";
+import "./CigarReview.css";
 
 function CigarReview(props) {
   // Setting up state for each cigar input

@@ -20,10 +20,7 @@
   top: 35px;
   right: 10px;
   left: 5px;
-  /* background: #101311a0; */
-  /* border: 1px solid whitesmoke; */
   text-align: left;
-  /* border-radius: 5px; */
 }
 
 .search-result:link {
@@ -35,6 +32,7 @@
   color: whitesmoke;
 }
 
-.search-result:hover {
-  color: yellow;
-}
+/* .search-result:hover {
+  text-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
+    0 0 30px #e60073, 0 0 40px #e60073;
+} */

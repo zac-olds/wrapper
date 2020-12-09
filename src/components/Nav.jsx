@@ -9,7 +9,7 @@ class Nav extends Component {
       <div className="nav-container">
         <div>
           <Link to="/" id="header-link">
-            <h1>the wrapper</h1>
+            the wrapper
           </Link>
         </div>
         <div>
