@@ -70,63 +70,89 @@ function CigarReview(props) {
     <div className="review-container">
       <h2>Cigar Review</h2>
       <form onSubmit={handleSubmit} className="form-container">
-        <label htmlFor="author"> Author: </label>
+        <label htmlFor="author" id="author-label">
+          Author:{" "}
+        </label>
         <input
           name="author"
+          id="author-input"
           type="text"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <label htmlFor="cigar"> Cigar: </label>
+        <label htmlFor="cigar" id="cigar-label">
+          Cigar:{" "}
+        </label>
         <input
           name="cigar"
+          id="cigar-input"
           type="text"
           value={cigar}
           onChange={(e) => setCigar(e.target.value)}
         />
-        <label htmlFor="rating"> Rating: </label>
+        <label htmlFor="rating" id="rating-label">
+          Rating:{" "}
+        </label>
         <input
           name="rating"
+          id="rating-input"
           type="number"
           value={rating}
           onChange={(e) => setRating(e.target.value)}
         />
-        <label htmlFor="wrapper"> Wrapper: </label>
+        <label htmlFor="wrapper" id="wrapper-label">
+          Wrapper:{" "}
+        </label>
         <input
           name="wrapper"
+          id="wrapper-input"
           type="text"
           value={wrapper}
           onChange={(e) => setWrapper(e.target.value)}
         />
-        <label htmlFor="binder"> Binder: </label>
+        <label htmlFor="binder" id="binder-label">
+          Binder:{" "}
+        </label>
         <input
           name="binder"
+          id="binder-input"
           type="text"
           value={binder}
           onChange={(e) => setBinder(e.target.value)}
         />
-        <label htmlFor="filler"> Filler: </label>
+        <label htmlFor="filler" id="filler-label">
+          Filler:{" "}
+        </label>
         <input
           name="filler"
+          id="filler-input"
           type="text"
           value={filler}
           onChange={(e) => setFiller(e.target.value)}
         />
-        <label htmlFor="tastingNotes"> Tasting Notes: </label>
-        <input
+        <label htmlFor="tastingNotes" id="tastingNotes-label">
+          Tasting Notes:{" "}
+        </label>
+        <textarea
           name="tastingNotes"
+          id="tastingNotes-input"
           type="text"
           value={tastingNotes}
           onChange={(e) => setTastingNotes(e.target.value)}
         />
-        <label htmlFor="review"> Review: </label>
-        <input
+        <label htmlFor="review" id="review-label">
+          Review:{" "}
+        </label>
+        <textarea
           name="review"
+          id="review-input"
           type="text"
           value={review}
           onChange={(e) => setReview(e.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" id="button">
+          Submit
+        </button>
       </form>
     </div>
   );

@@ -33,14 +33,19 @@
   text-align: center;
 }
 
+.button-container button {
+  margin: 5px;
+}
+
 .quote-container {
   width: 75vw;
   height: auto;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .top-three-container {
   width: 50vw;
   text-align: center;
+  line-height: 35px;
 }
