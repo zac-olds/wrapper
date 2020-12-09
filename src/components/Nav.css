@@ -4,13 +4,12 @@ NAV STYLING
 
 .nav-container {
   background-color: #101311a0;
-  /* background-color: black; */
+  box-shadow: 3px 3px #1b1b1b;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-radius: 15px;
-  /* width: 600px; */
   width: 90vw;
   height: 80px;
   margin: 20px;

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { baseURL, config } from "./services";
 
 // PAGE NAVIGATION
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 
 // COMPONENTS
 import './App.css';
@@ -58,7 +58,12 @@ function App() {
       {/* HOME */}
         <Route exact path="/">
           <Home cigarData={cigarData} />
-        </Route>  
+        </Route>
+        {/* 404 PAGE */}
+        <Route path="/:404">
+          <h3> You are on the wrong page!</h3>
+          <Link to="/">Go Back Home</Link>
+        </Route>
       </Switch>
       {/* FOOTER */}
       <div>

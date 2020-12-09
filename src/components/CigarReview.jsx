@@ -67,65 +67,68 @@ function CigarReview(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-container">
-      <label htmlFor="author"></label>
-      <input
-        name="author"
-        type="text"
-        value={author}
-        onChange={(e) => setAuthor(e.target.value)}
-      />
-      <label htmlFor="cigar"></label>
-      <input
-        name="cigar"
-        type="text"
-        value={cigar}
-        onChange={(e) => setCigar(e.target.value)}
-      />
-      <label htmlFor="rating"></label>
-      <input
-        name="rating"
-        type="number"
-        value={rating}
-        onChange={(e) => setRating(e.target.value)}
-      />
-      <label htmlFor="wrapper"></label>
-      <input
-        name="wrapper"
-        type="text"
-        value={wrapper}
-        onChange={(e) => setWrapper(e.target.value)}
-      />
-      <label htmlFor="binder"></label>
-      <input
-        name="binder"
-        type="text"
-        value={binder}
-        onChange={(e) => setBinder(e.target.value)}
-      />
-      <label htmlFor="filler"></label>
-      <input
-        name="filler"
-        type="text"
-        value={filler}
-        onChange={(e) => setFiller(e.target.value)}
-      />
-      <label htmlFor="tastingNotes"> Tasting Notes: </label>
-      <input
-        name="tastingNotes"
-        type="text"
-        value={tastingNotes}
-        onChange={(e) => setTastingNotes(e.target.value)}
-      />
-      <label htmlFor="review"> Review: </label>
-      <input
-        name="review"
-        type="text"
-        value={review}
-        onChange={(e) => setReview(e.target.value)}
-      />
-      <button type="submit">Submit</button>
-    </form>
+    <div className="review-container">
+      <h2>Cigar Review</h2>
+      <form onSubmit={handleSubmit} className="form-container">
+        <label htmlFor="author"> Author: </label>
+        <input
+          name="author"
+          type="text"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+        />
+        <label htmlFor="cigar"> Cigar: </label>
+        <input
+          name="cigar"
+          type="text"
+          value={cigar}
+          onChange={(e) => setCigar(e.target.value)}
+        />
+        <label htmlFor="rating"> Rating: </label>
+        <input
+          name="rating"
+          type="number"
+          value={rating}
+          onChange={(e) => setRating(e.target.value)}
+        />
+        <label htmlFor="wrapper"> Wrapper: </label>
+        <input
+          name="wrapper"
+          type="text"
+          value={wrapper}
+          onChange={(e) => setWrapper(e.target.value)}
+        />
+        <label htmlFor="binder"> Binder: </label>
+        <input
+          name="binder"
+          type="text"
+          value={binder}
+          onChange={(e) => setBinder(e.target.value)}
+        />
+        <label htmlFor="filler"> Filler: </label>
+        <input
+          name="filler"
+          type="text"
+          value={filler}
+          onChange={(e) => setFiller(e.target.value)}
+        />
+        <label htmlFor="tastingNotes"> Tasting Notes: </label>
+        <input
+          name="tastingNotes"
+          type="text"
+          value={tastingNotes}
+          onChange={(e) => setTastingNotes(e.target.value)}
+        />
+        <label htmlFor="review"> Review: </label>
+        <input
+          name="review"
+          type="text"
+          value={review}
+          onChange={(e) => setReview(e.target.value)}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 }
 

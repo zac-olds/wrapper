@@ -1,14 +1,38 @@
-.form-container {
+/* .form-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center;
   background-color: #101311a0;
+  box-shadow: 3px 3px #1b1b1b;
   border-radius: 15px;
   margin: 20px;
   width: 90vw;
 }
 
 .form-container input {
-  margin: 10px;
+  margin: 10px auto;
+} */
+
+.review-container {
+  background-color: #101311a0;
+  box-shadow: 3px 3px #1b1b1b;
+  border-radius: 15px;
+  margin: 20px;
+  width: 90vw;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  grid-gap: 10px;
+}
+
+.form-container label {
+  grid-column: 1/2;
+}
+
+.form-container input,
+button {
+  grid-column: 2/3;
 }

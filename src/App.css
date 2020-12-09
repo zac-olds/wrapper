@@ -1,13 +1,15 @@
 body {
   /* text-align: center; */
   background-image: url("./assets/brown-leaves.jpg");
-  background-size: cover;
+  background-size: 100vw 100vw;
   color: whitesmoke;
   text-shadow: 1px 1px black;
   font-family: "Oswald", sans-serif;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  min-height: 100vh;
+  height: auto;
 }
 
 button {
@@ -27,11 +29,32 @@ button:hover {
     0 0 30px #e60073, 0 0 40px #e60073;
 }
 
-@media (max-width: 550px) {
+h2 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  margin: 10px auto;
+  animation: neon 0.05s ease-in infinite;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 15px #f05e1b,
+      0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+  }
+  to {
+    text-shadow: 0 0 12px #f66420, 0 0 25px #f05e1b, 0 0 35px #f05e1b,
+      0 0 40px #e60073, 0 0 45px #e60073, 0 0 50px #e60073, 0 0 50px #e60073;
+  }
+}
+
+/* @media (max-width: 550px) {
   body {
-    height: 100vh;
     width: 100vw;
     background-size: stretch;
     background-repeat: no-repeat;
   }
-}
+} */
