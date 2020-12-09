@@ -3,8 +3,8 @@ NAV STYLING
 ------------------------- */
 
 .nav-container {
-  /* background-color: #101311a0; */
-  background-color: black;
+  background-color: #101311a0;
+  /* background-color: black; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -29,12 +29,12 @@ NAV STYLING
 }
 
 @media (max-width: 550px) {
-  #header-link {
-    font-size: 30px;
-    padding: 0px 0px 15px 25px;
-  }
   .nav-container {
-    /* max-width: 80vw;
-    margin: 5px; */
+    flex-direction: column;
+    height: 100px;
+  }
+  #header-link {
+    font-size: 35px;
+    padding: 0px 0px 15px 0px;
   }
 }

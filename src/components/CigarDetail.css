@@ -41,17 +41,17 @@
   font-weight: 200;
   color: whitesmoke;
   /* text-shadow: 0 0 10px #f96666, 3px 3px 20px #e87a47; */
-  animation: neon 3s ease-in-out infinite alternate;
+  animation: neon 0.05s ease-in infinite;
 }
 
 @keyframes neon {
   from {
     text-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
-      0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+      0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 50px #e60073;
   }
   to {
-    text-shadow: 0 0 2px #f05e1b, 0 0 20px #f05e1b, 0 0 30px #f05e1b,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 12px #f66420, 0 0 25px #f05e1b, 0 0 35px #f05e1b,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 50px #e60073, 0 0 50px #e60073;
   }
 }
 

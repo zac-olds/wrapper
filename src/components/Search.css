@@ -17,10 +17,16 @@
 
 .search-bar div {
   position: absolute;
-  top: 35px;
+  top: 32px;
   right: 10px;
   left: 5px;
   text-align: left;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.search-result p {
+  margin: 5px;
 }
 
 .search-result:link {
@@ -30,6 +36,20 @@
 
 .search-result:visited {
   color: whitesmoke;
+}
+
+@media (max-width: 550px) {
+  .search-bar input {
+    font-size: 10px;
+    margin: 0px 0px 15px 0px;
+  }
+  .search-bar div {
+    background-color: black;
+    width: 50vw;
+    left: -20px;
+    text-align: center;
+    border-radius: 10px;
+  }
 }
 
 /* .search-result:hover {

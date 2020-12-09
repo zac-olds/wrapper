@@ -24,7 +24,7 @@ function Search(props) {
         {search &&
           results.map((result) => (
             <Link className="search-result" to={`/cigars/${result.id}`}>
-              {result.fields.cigar}
+              <p>{result.fields.cigar}</p>
             </Link>
           ))}
       </div>
