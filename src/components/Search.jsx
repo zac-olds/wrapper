@@ -16,9 +16,8 @@ function Search(props) {
   });
 
   return (
-    <form className="search-bar">
+    <form className="search-bar" onSubmit={(e) => e.preventDefault()}>
       <input
-        placeholder="Search"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         id="search-input"

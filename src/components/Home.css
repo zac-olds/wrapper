@@ -6,11 +6,11 @@
   box-shadow: 2px 2px #1b1b1b;
   border-radius: 15px;
   margin: 20px;
+  padding: 20px;
   width: 90vw;
 }
 
 .button-container {
-  margin-bottom: 40px;
   text-align: center;
 }
 

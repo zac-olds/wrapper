@@ -3,6 +3,12 @@ import axios from "axios";
 import { baseURL, config } from "../services";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDumpsterFire,
+  faEdit,
+  faArrowCircleLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import "./CigarDetail.css";
 
 class CigarDetail extends Component {
@@ -82,15 +88,21 @@ class CigarDetail extends Component {
               />
             </div>
           </div>
-          <div className="button-container">
+          <div className="options-container">
             <Link to="/cigar/list">
-              <button onClick={this.deleteData}>Delete</button>
+              <button onClick={this.deleteData} id="delete">
+                <FontAwesomeIcon icon={faDumpsterFire} />
+              </button>
             </Link>
             <Link to={`/edit/${this.state.cigarID}`}>
-              <button>Edit</button>
+              <button id="edit">
+                <FontAwesomeIcon icon={faEdit} />
+              </button>
             </Link>
             <Link to="/cigar/list">
-              <button>Back to List</button>
+              <button id="back">
+                <FontAwesomeIcon icon={faArrowCircleLeft} />
+              </button>
             </Link>
           </div>
         </div>

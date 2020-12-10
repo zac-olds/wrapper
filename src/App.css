@@ -6,7 +6,7 @@ body {
   text-shadow: 1px 1px black;
   font-family: "Oswald", sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
   height: auto;
@@ -24,10 +24,10 @@ button {
     0 0 30px #e60073, 0 0 40px #e60073;
 }
 
-button:hover {
+/* button:hover {
   box-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
     0 0 30px #e60073, 0 0 40px #e60073;
-}
+} */
 
 h2 {
   font-family: "Dancing Script", cursive;
