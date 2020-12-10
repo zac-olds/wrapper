@@ -13,6 +13,7 @@ const Home = (props) => {
           cigar and relax.”
         </em>
         <p> ―Michael Jordan</p>
+        <input></input>
       </div>
       <h2>Best Cigars</h2>
       <div className="top-three-container">

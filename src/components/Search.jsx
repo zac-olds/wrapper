@@ -20,6 +20,9 @@ function Search(props) {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
+      <button>
+        <i class="fas fa-search"></i>
+      </button>
       <div className="results-menu">
         {search &&
           results.map((result) => (

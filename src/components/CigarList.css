@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #101311a0;
+  box-shadow: 3px 3px #1b1b1b;
   border-radius: 15px;
   margin: 20px;
   width: 90vw;
@@ -13,26 +14,6 @@
   margin-bottom: 40px;
   line-height: 35px;
 }
-
-/* .cigar-list-container h2 {
-  font-family: "Dancing Script", cursive;
-  letter-spacing: 5px;
-  font-size: 35px;
-  color: whitesmoke;
-  margin: 10px auto;
-  animation: neon 0.05s ease-in infinite;
-}
-
-@keyframes neon {
-  from {
-    text-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
-      0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 50px #e60073;
-  }
-  to {
-    text-shadow: 0 0 12px #f66420, 0 0 25px #f05e1b, 0 0 35px #f05e1b,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 50px #e60073, 0 0 50px #e60073;
-  }
-} */
 
 .cigar-link:link {
   text-decoration: none;
@@ -48,7 +29,6 @@
 }
 
 .cigar-link:hover {
-  /* font-family: "Dancing Script", cursive; */
   font-size: 20px;
   text-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
     0 0 30px #e60073, 0 0 40px #e60073;

@@ -35,7 +35,6 @@ class CigarDetail extends Component {
       config
     );
     this.setState({ cigar: resp.data.fields });
-    console.log(this.state);
   }
 
   // Deletes a record when the button is pressed.
