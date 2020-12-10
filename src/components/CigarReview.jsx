@@ -150,6 +150,16 @@ function CigarReview(props) {
           value={review}
           onChange={(e) => setReview(e.target.value)}
         />
+        <label htmlFor="photo" id="photo-label">
+          Image URL:{" "}
+        </label>
+        <input
+          name="photo"
+          id="photo-input"
+          type="text"
+          value={photo}
+          onChange={(e) => setPhoto(e.target.value)}
+        />
         <button type="submit" id="button">
           Submit
         </button>

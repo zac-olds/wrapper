@@ -14,21 +14,10 @@
 .footer-container a {
   color: whitesmoke;
   margin: 5px;
-  /* font-size: 15px; */
 }
 
 .footer-container p {
   margin-left: 5px;
-}
-
-#linkedin {
-  box-shadow: 0px 0px 2px black;
-  border-radius: 5%;
-}
-
-#github {
-  box-shadow: 0px 0px 2px black;
-  border-radius: 100%;
 }
 
 #linkedin:hover,
