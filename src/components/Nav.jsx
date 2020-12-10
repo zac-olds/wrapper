@@ -13,7 +13,10 @@ class Nav extends Component {
           </Link>
         </div>
         <div>
-          <Search cigarData={this.props.cigarData} />
+          <Search
+            cigarData={this.props.cigarData}
+            refresh={this.props.refresh}
+          />
         </div>
       </div>
     );

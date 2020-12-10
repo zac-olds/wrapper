@@ -19,7 +19,7 @@ import CigarMap from "./components/CigarMap";
 function App() {
 
   const [cigarData, setCigarData] = useState([])
-  const [toggle, setToggle] = useState(true)
+  const [toggle, setToggle] = useState(false)
   // console.log(cigarData);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ function App() {
       {/* HEADER */}
       <div>
         <header>
-          <Nav cigarData={cigarData} />
+          <Nav cigarData={cigarData} refresh={setToggle}/>
         </header>
       </div>
       <Switch>
@@ -48,8 +48,8 @@ function App() {
           <CigarReview refresh={ setToggle} cigarData={cigarData} />
         </Route>
       {/* CIGAR REVIEW DETAIL */}
-        <Route path="/cigars/:id">
-          <CigarDetail refresh={setToggle}/>
+        <Route exact path="/cigars/:id">
+          <CigarDetail refresh={setToggle} cigarData={cigarData} toggle={toggle}/>
         </Route>
       {/* CIGAR LIST */}
         <Route path="/cigar/list">

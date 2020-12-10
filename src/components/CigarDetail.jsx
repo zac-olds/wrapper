@@ -9,23 +9,36 @@ class CigarDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cigar: [],
+      cigar: {},
       cigarID: props.match.params.id,
     };
     this.deleteData = this.deleteData.bind(this);
   }
 
   componentDidMount() {
-    // console.log(this.match.params.id);
     this.getData();
   }
 
-  async getData() {
-    const resp = await axios.get(`${baseURL}/${this.state.cigarID}`, config);
-    // console.log(resp.data.fields);
-    this.setState({ cigar: resp.data.fields });
+  // Every time component updates, it will swap toggle and rerun getData to retrieve data for the updated component.
+  componentDidUpdate() {
+    if (this.props.toggle) {
+      this.getData();
+      this.props.refresh((prev) => !prev);
+    }
   }
 
+  // Get data from airtable for a specific cigar, determined by the record ID which is shown in the address bar/match.params.
+  async getData() {
+    console.log(this.props.match.params.id);
+    const resp = await axios.get(
+      `${baseURL}/${this.props.match.params.id}`,
+      config
+    );
+    this.setState({ cigar: resp.data.fields });
+    console.log(this.state);
+  }
+
+  // Deletes a record when the button is pressed.
   async deleteData() {
     await axios.delete(`${baseURL}/${this.state.cigarID}`, config);
     this.props.refresh((prev) => !prev);

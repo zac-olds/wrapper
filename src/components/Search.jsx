@@ -6,17 +6,12 @@ import "./Search.css";
 function Search(props) {
   // create state to store search values from input
   const [search, setSearch] = useState("");
-  const { cigarData } = props;
+  const { cigarData, refresh } = props;
   // if cigarData contains the search input, then it is returned by filter. All
   const results = cigarData.filter((s) => {
     let string = JSON.stringify(s);
     return string.toLowerCase().includes(search.toLowerCase());
   });
-
-  //   const handleSubmit = (e) => {
-  //     e.preventDefault();
-  //     props.refresh((prev) => !prev);
-  // }
 
   return (
     <form className="search-bar">
@@ -32,6 +27,10 @@ function Search(props) {
               className="search-result"
               to={`/cigars/${result.id}`}
               key={result.id}
+              onClick={() => {
+                refresh((prev) => !prev);
+                setSearch(""); // sets search back to initial state to remove the drop down menu.
+              }}
             >
               <p>{result.fields.cigar}</p>
             </Link>

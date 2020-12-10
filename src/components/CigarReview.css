@@ -13,7 +13,7 @@
 .form-container {
   display: grid;
   grid-template-columns: 20vw 20vw 20vw;
-  grid-template-rows: repeat(12, 20px);
+  grid-template-rows: repeat(12, 30px);
   grid-gap: 10px;
   justify-content: center;
   text-align: left;
