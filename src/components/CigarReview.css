@@ -98,7 +98,7 @@
 }
 
 #photo-label {
-  grid-column-start: 1;
+  grid-column: 1 / span 3;
   grid-row-start: 11;
 }
 
