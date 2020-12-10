@@ -9,6 +9,7 @@ import { Switch, Route, Link } from "react-router-dom";
 // COMPONENTS
 import './App.css';
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import CigarReview from "./components/CigarReview";
 import Home from "./components/Home";
 import CigarDetail from "./components/CigarDetail";
@@ -68,6 +69,7 @@ function App() {
       {/* FOOTER */}
       <div>
         <footer>
+          <Footer/>
         </footer>
       </div>
       

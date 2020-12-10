@@ -1,18 +1,32 @@
 .search-bar {
   text-align: right;
   position: relative;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+#search-button {
+  border: none;
+}
+
+#search-buton:hover {
+  box-shadow: none;
 }
 
 .search-bar input {
   font-family: "Oswald", sans-serif;
-  margin: 0px 15px 0px 0px;
-  border-radius: 10px;
+  letter-spacing: 1px;
   padding: 5px;
   color: whitesmoke;
   background-color: #10131156;
-  border: 1px solid whitesmoke;
+  border: none;
   text-shadow: 0 0 2px #f05e1b, 0 0 10px #f05e1b, 0 0 20px #f05e1b,
     0 0 30px #e60073, 0 0 40px #e60073;
+}
+
+.search-bar input:focus {
+  outline: none;
 }
 
 .search-bar div {

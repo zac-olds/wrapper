@@ -14,7 +14,8 @@
 #header-link {
   padding: 0px 0px 15px 50px;
   font-size: 50px;
-  color: #7f00ff;
+  /* color: #7f00ff; */
+  color: #eead0e;
   font-family: "Abril Fatface", cursive;
   text-decoration: none;
 }

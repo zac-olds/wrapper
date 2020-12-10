@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Search.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function Search(props) {
   // create state to store search values from input
@@ -19,9 +21,11 @@ function Search(props) {
         placeholder="Search"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
+        id="search-input"
+        autoComplete="off"
       />
-      <button>
-        <i class="fas fa-search"></i>
+      <button id="search-button">
+        <FontAwesomeIcon icon={faSearch} />
       </button>
       <div className="results-menu">
         {search &&
