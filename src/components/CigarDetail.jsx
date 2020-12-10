@@ -29,7 +29,6 @@ class CigarDetail extends Component {
 
   // Get data from airtable for a specific cigar, determined by the record ID which is shown in the address bar/match.params.
   async getData() {
-    console.log(this.props.match.params.id);
     const resp = await axios.get(
       `${baseURL}/${this.props.match.params.id}`,
       config

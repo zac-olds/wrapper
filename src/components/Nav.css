@@ -1,6 +1,6 @@
 .nav-container {
   background-color: #101311a0;
-  box-shadow: 3px 3px #1b1b1b;
+  box-shadow: 2px 2px #1b1b1b;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -14,7 +14,6 @@
 #header-link {
   padding: 0px 0px 15px 50px;
   font-size: 50px;
-  /* color: #7f00ff; */
   color: #eead0e;
   font-family: "Abril Fatface", cursive;
   text-decoration: none;
