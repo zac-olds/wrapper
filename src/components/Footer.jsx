@@ -14,7 +14,7 @@ function Footer() {
         <FontAwesomeIcon icon={faGithub} id="github" />
       </a>
       <p>
-        <FontAwesomeIcon icon={faCopyright} id="copyright" /> Zac Olds
+        <FontAwesomeIcon icon={faCopyright} id="copyright" /> 2020 Zac Olds
       </p>
     </div>
   );
